@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns: th="http://www.thymeleaf.org">
+<head>
+	<title>reviews</title>
+</head>
+<body> 
+	<h1 >Favorite Travel Destination and Hotel Reviews</h1>
+
+	<div th:each= "review: ${reviews}">
+		<li th:text="${review.name}"></li>
+	</div>
+
+
+					
+							
+</body>
+</html>
