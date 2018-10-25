@@ -4,14 +4,11 @@
 	<title>A Review</title>
 </head>
 <body>
-<h1>A Single Travel Review</h1>
+<h1>Check out this location...</h1>
+<h2 th:text="@{${review.location}}"> </h2>
 
-<div th:each = "review: ${reviews}">
-	<p th:text = "${review.location}"></p>
-	<p th:text ="${review.name}"></p>
-	<p th:text ="${review.content}"></p>
-	<a href="http://localhost:8080/show-reviews"> Back to home</a>
-</div>
+<img th:src="@{${review.imageUrl}}">
+
 
 </body>
 </html>

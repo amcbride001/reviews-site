@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html xmlns: th="http://www.thymeleaf.org">
+<html lang="en" xmlns: th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        
 	<title>reviews</title>
 </head>
 <body> 
-	<h1 >Favorite Travel Destination and Hotel Reviews</h1>
-
-	<div th:each="review: ${reviews}">
+	<h1><center>Favorite Travel Destination and Hotel Reviews</center></h1>
+<hr />
+<div class= "grid container">
+<div class="review" th:each="review:${reviews} ">
+	<ul>
 		<li> 
-		<a th:href="@{/review(id=${review.id})}" th:text="${review.location}"></a>
+		<a th:href="@{/review(id=${review.id})}" th:text="${review.location}">
+		
+		</a>
 		</li>
-	</div>
+		
+	</div> <!--<img th:src="@{${review.imageUrl}}"/> -->
 
 
 					
