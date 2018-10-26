@@ -2,13 +2,18 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>A Review</title>
+	<link rel="stylesheet" href="css/review.css">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans" rel="stylesheet">
+
 </head>
 <body>
 <h1>Check out this location...</h1>
-<h2 th:text="@{${review.location}}"> </h2>
-
+<h2 th:text="${review.location}"> </h2>
+<div>
 <img th:src="@{${review.imageUrl}}">
-
-
+<p th:text="${review.category}"></p>
+<p th:text="${review.content}"></p>
+</div>
+<a href="/show-reviews">Back to Home</a>
 </body>
 </html>

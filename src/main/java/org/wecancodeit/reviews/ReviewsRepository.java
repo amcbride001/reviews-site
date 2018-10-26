@@ -14,9 +14,12 @@ public class ReviewsRepository {
 
 	public ReviewsRepository() {
 		//database...build out your reviews
-		Review puntaCana = new Review(1L, "Punta Cana", "breathless.jpg");
-		Review miami = new Review(2L, "Miami", "sagamore.jpg");
-		Review vegas = new Review(3L, "Las Vegas", "venetian.jpg");
+		Review puntaCana = new Review(1L, "Punta Cana", "breathless.jpg", "Caribbean Fun",
+				"A");
+		Review miami = new Review(2L, "Miami", "sagamore.jpg", "Domestic With A Latin Flavor",
+				"B");
+		Review vegas = new Review(3L, "Las Vegas", "venetian.jpg","It's Vegas Need I Say More?!?", 
+				"C");
 		
 		reviewList.put(puntaCana.getId(), puntaCana);
 		reviewList.put(miami.getId(), miami);
