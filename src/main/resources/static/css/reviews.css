@@ -1,9 +1,17 @@
 body {
-    background-color: aquamarine;
-
-font-family: 'Gloria Hallelujah', cursive;
+    background-color:azure;
 }
-h1,h2,h3{
-    font-family: 'Open Sans', sans-serif;
+title {
+	font-family: 'Spicy Rice', cursive;
+}
+h1{
+	font-family: 'Permanent Marker', cursive;
+}
+li{
+	font-family: 'Permanent Marker', cursive;
 
+}
+a{
+	font-family: 'Source Serif Pro'. serif; 
+	
 }

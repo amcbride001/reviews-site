@@ -1,9 +1,22 @@
 body {
-    background-color: aquamarine;
-
-font-family: 'Gloria Hallelujah', cursive;
+    background-color:azure;
 }
-h1,h2,h3{
+h1 {
+	font-family: 'Permanent Marker', cursive;
+}
+p{
+	font-family: 'Permanent Marker', cursive;
+	margin-block-start: 1em;
+	margin-block-end: 4em;
+	margin-block-start:1em;
+	margin-inline-end: 8em;
+}
+
+h2,h3{
     font-family: 'Open Sans', sans-serif;
 
+}
+a{
+	font-family: 'Source Serif Pro', serif;
+	
 }

@@ -10,11 +10,11 @@ public class ReviewsRepositoryTests {
 	ReviewsRepository underTest;
 
 	private long id = 1L;
-	private Review review = new Review(id, "title", "category");
+	private Review review = new Review(id, "location", "imageUrl", "category", "content" );
 	
 	private long date = 2L;
-	private Review reviewDate = new Review(date, "title", "category");
-	private Review secondReview = new Review(date, "title", "category");
+	private Review reviewDate = new Review(id, "location", "imageUrl", "category", "content");
+	private Review secondReview = new Review(id, "location", "imageUrl", "category", "content");
 	
 	@Test 
 	public void shouldFindAReview() {
